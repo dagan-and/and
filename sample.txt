@@ -1,0 +1,18 @@
+private String getUserKey(){
+
+        long mNow;
+        Date mDate;
+        StringBuffer temp = new StringBuffer();
+        Random rnd = new Random();
+
+        for(int i=0; i<4; i++){
+            String randomStr = String.valueOf((char) ((int) (rnd.nextInt(26)) + 97));
+            temp.append(randomStr);
+        }
+
+        SimpleDateFormat mFormat = new SimpleDateFormat("yyyyMMddhhmmss");
+        mNow = System.currentTimeMillis();
+        mDate = new Date(mNow);
+
+        return temp+mFormat.format(mDate);
+    }
