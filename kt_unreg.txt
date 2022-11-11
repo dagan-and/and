@@ -1,0 +1,22 @@
+public String agent_unregister() {
+        if (!this.checkSDKInit(false)) {
+            return null;
+        } else {
+            MyJson j = new MyJson("{}");
+            String timeStamp = this.grpcUtils.getTimeStamp();
+            String signature = this.grpcUtils.hmacDigest(this.mClientId, this.mClientKey, timeStamp, this.mClientSecret);
+
+            try {
+                Response<Repo> responseData = (Response)(new Inside.executeQuery(this.restApiManager)).execute(new String[]{"authDelete", this.UUID, timeStamp, signature}).get();
+                Repo repo = (Repo)responseData.body();
+                this.testSendCommand("res", "DELETE : /v2/authorize/{uuid}", this.convertJson(repo));
+                Logger.d(TAG + " initInside agent_unregister ret : " + this.convertJson(repo));
+                return this.convertJson(repo);
+            } catch (Exception var6) {
+                Logger.i(TAG + " agent_unregister Exception : " + var6.toString());
+                j.o("rc", -1);
+                j.o("rcmsg", "알 수 없는 시스템 에러가 발생하였습니다.");
+                return j.toString();
+            }
+        }
+    }
