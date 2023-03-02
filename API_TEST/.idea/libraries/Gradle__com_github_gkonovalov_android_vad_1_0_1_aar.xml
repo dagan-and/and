@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.gkonovalov:android-vad:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e31be89db83c980f0ae8a7242498b100/transformed/android-vad-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e31be89db83c980f0ae8a7242498b100/transformed/android-vad-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e31be89db83c980f0ae8a7242498b100/transformed/android-vad-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gkonovalov/android-vad/1.0.1/ee704c53a5711eb64ddd87de2911126f31e79d72/android-vad-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

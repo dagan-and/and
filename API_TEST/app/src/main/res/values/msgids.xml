@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Messages IDs -->
+    <item name="sttValue" type="id"/>
+    <item name="sttStatus" type="id"/>
+    <item name="sttResult" type="id"/>
+</resources>
