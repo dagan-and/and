@@ -2,6 +2,8 @@
 <network-security-config>
     <base-config cleartextTrafficPermitted="true" />
     <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">inside.gigagenie.ai:9080</domain>
+        <domain includeSubdomains="true">inside-dev.gigagenie.ai:30109</domain>
         <domain includeSubdomains="true">3.36.201.40</domain>
         <domain includeSubdomains="true">3.36.201.40:8080</domain>
         <domain includeSubdomains="true">13.125.176.152:8081</domain>

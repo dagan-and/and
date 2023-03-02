@@ -243,7 +243,7 @@ class MainViewModel(private val getTTSUseCase: GetTTSUseCase) : BaseViewModel() 
                         "{\"STT_HEADWORD\" : \"펀드해지계좌조회해줘\",\"DOKUMS\" : \"펀드해지계좌조회해줘\"}\n" +
                         "  ]\n" +
                         " }")
-                formBody.add("preLearning","")
+                formBody.add("preLearning","true")
                 formBody.add("domain","DAQUV")
                 request.post(formBody.build())
 

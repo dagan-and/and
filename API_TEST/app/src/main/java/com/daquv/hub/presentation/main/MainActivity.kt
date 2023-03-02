@@ -78,25 +78,31 @@ class MainActivity : BaseActivity() {
         })
 
         mBinding!!.tmap.setOnClickListener {
-//            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("tmap://route?goalx=$37.3172863&goaly=$126.84426&goalname=$title")).apply {
-//                `package` = "com.skt.skaf.l001mtm091"
-//                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-//            }
-//            startActivity(intent)
-            //android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=tmap://route/... flg=0x10000000 pkg=com.skt.skaf.l001mtm091 }
+            //지도 공용 스킴 사용할때
+//            val intent = Intent()
+//            intent.action = Intent.ACTION_VIEW
+//            intent.addCategory(Intent.CATEGORY_DEFAULT)
+//            intent.data = Uri.parse("geo:37.3848633,127.1233389?q=경기도 성남시 분당구 서현동 263(서현역)")
+            //intent.`package` = "com.skt.tmap.ku"
+            //startActivity(intent)
 
-//            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("tmap://route?goalx=$37.3172863&goaly=$126.84426&goalname=$title")).apply {
-//                `package` = "com.skt.tmap.ku"
-//                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-//            }
-//            startActivity(intent)
 
-            val intent = Intent()
-            intent.action = Intent.ACTION_VIEW
-            intent.addCategory(Intent.CATEGORY_DEFAULT)
-            intent.data = Uri.parse("geo:37.3848633,127.1233389?q=경기도 성남시 분당구 서현동 263(서현역)")
-            intent.`package` = "com.skt.tmap.ku"
-            startActivity(intent)
+
+            //티맵 바로 안내 tmap://route?goalname=%EC%84%9C%ED%98%84%EC%97%AD&goaly=37.3848633&goalx=127.1233389
+            //티맵 주소 안내 tmap://search?name=%EA%B0%95%EB%82%A8%EC%97%AD
+
+            //카카오맵 바로 안내 kakaomap://route?ep=37.5209436,127.1230074&by=CAR
+            //카카오맵 주소 안내 kakaomap://search?q=%EA%B0%95%EB%82%A8%EC%97%AD
+
+            //네이버 바로 안내 nmap://route/car?dlat=37.5209436&dlng=127.1230074&dname=%EC%98%AC%EB%A6%BC%ED%94%BD%EA%B3%B5%EC%9B%90&appname=com.daquv.api.test
+            //네이버 주소 안내 nmap://search?query=%EA%B0%95%EB%82%A8%EC%97%AD&appname=com.daquv.api.test
+
+            try {
+                val intent2 = Intent(Intent.ACTION_VIEW, Uri.parse("kakaomap://search?q=%EA%B0%95%EB%82%A8%EC%97%AD"))
+                startActivity(intent2)
+            } catch (e : Exception) {
+                Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
+            }
 
         }
     }
