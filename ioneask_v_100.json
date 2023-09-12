@@ -1,0 +1,226 @@
+{
+  "intent_code": {
+    "call" : "NNN014",
+    "sms": "NNN014",
+    "decision" : "NNN018",
+    "turn": "NNN017",
+    "map": "IB008"
+  },
+  "entity_code": {
+    "call" : "NE-PERSON",
+    "sms": "NE-MESSAGE"
+  },
+  "map_info": {
+    "max_zoom" : 16,
+    "min_zoom" : 10,
+    "default_zoom": 12,
+    "filter": [
+      {
+        "category": "radius",
+        "type": "select",
+        "search" : "N",
+        "name": "거리",
+        "value": [
+          "5KM","150M","300M","1KM","2.5KM","5KM"
+        ]
+      },
+      {
+        "category": "trade",
+        "type": "select",
+        "search" : "N",
+        "name": "거래/매거래",
+        "value": [
+          "전체","거래","미거래"
+        ]
+      },
+      {
+        "category": "industry",
+        "type": "select",
+        "search" : "Y",
+        "name": "산업분류",
+        "value": [
+          "유통","IT","철강","제조"
+        ]
+      },
+      {
+        "category": "info",
+        "type": "switch",
+        "search" : "N",
+        "name": "기업상세정보 보유",
+        "value": [
+          "Y","N"
+        ]
+      },
+      {
+        "category": "positive",
+        "type": "switch",
+        "search" : "N",
+        "name": "긍정 이벤트 보유",
+        "value": [
+          "Y","N"
+        ]
+      },
+      {
+        "category": "negative",
+        "type": "switch",
+        "search" : "N",
+        "name": "부정 이벤트 보유",
+        "value": [
+          "Y","N"
+        ]
+      },
+      {
+        "category": "etc",
+        "type": "multi",
+        "search" : "Y",
+        "name": "기타",
+        "value": [
+          "가나기업","다라기업","마바기업","사아기업","자차기업","카타기업","파하기업"
+        ]
+      }
+    ]
+  },
+  "inside_info": [
+    {
+      "client_id": "STgwMDI2ODg6MTY2NDQyOTE4MTQyNA==",
+      "client_key": "Y2xpZW50X2tleToxNjY0NDI5MTgxNDI0",
+      "client_secret": "Y2xpZW50X3NlY3JldDoxNjY0NDI5MTgxNDI0",
+      "client_uid": "HUB",
+      "server_ip": "inside-dev.gigagenie.ai",
+      "server_port": "50109",
+      "server_reset_port": "30109"
+    },
+    {
+      "client_id": "STgwMDI5Mjc6MTY3ODc1MzU4NzgxMA==",
+      "client_key": "Y2xpZW50X2tleToxNjc4NzUzNTg3ODEw",
+      "client_secret": "Y2xpZW50X3NlY3JldDoxNjc4NzUzNTg3ODEw",
+      "client_uid": "SALESFORCE",
+      "server_ip": "inside-dev.gigagenie.ai",
+      "server_port": "50109",
+      "server_reset_port": "30109"
+    },
+    {
+      "client_id": "STgwMDI5NzM6MTY4MTExMTg4MzQ5OQ==",
+      "client_key": "Y2xpZW50X2tleToxNjgxMTExODgzNDk5",
+      "client_secret": "Y2xpZW50X3NlY3JldDoxNjgxMTExODgzNDk5",
+      "client_uid": "POSCO",
+      "server_ip": "inside-dev.gigagenie.ai",
+      "server_port": "50109",
+      "server_reset_port": "30109"
+    }
+  ],
+  "local_cache": [
+    {
+      "file_name":"swiper-bundle.min.css",
+      "file_url":"https://unpkg.com/swiper/swiper-bundle.min.css"
+    },
+    {
+      "file_name":"import.css",
+      "file_url":"/assets/hub/css/import.css"
+    },
+    {
+      "file_name":"jquery-3.6.0.min.js",
+      "file_url":"/assets/hub/js/jquery-3.6.0.min.js"
+    },
+    {
+      "file_name":"common.js",
+      "file_url":"/assets/hub/js/common.js"
+    },
+    {
+      "file_name":"crmComm.js",
+      "file_url":"/assets/hub/js/crmComm.js"
+    },
+    {
+      "file_name":"reset.min.css",
+      "file_url":"/assets/hub/css/reset.min.css"
+    },
+    {
+      "file_name":"common.min.css",
+      "file_url":"/assets/hub/css/common.min.css"
+    },
+    {
+      "file_name":"app.min.css",
+      "file_url":"/assets/hub/css/app.min.css"
+    },
+    {
+      "file_name":"notosanskr.css",
+      "file_url":"http://fonts.googleapis.com/earlyaccess/notosanskr.css"
+    },
+    {
+      "file_name":"img_mic.png",
+      "file_url":"/assets/hub/img/common/img_mic.png"
+    },
+    {
+      "file_name":"btn_home.png",
+      "file_url":"/assets/hub/img/common/btn_home.png"
+    },
+    {
+      "file_name":"btn_tooltip.png",
+      "file_url":"/assets/hub/img/common/btn_tooltip.png"
+    },
+    {
+      "file_name":"img_sign_up.png",
+      "file_url":"/assets/hub/img/common/img_sign_up.png"
+    },
+    {
+      "file_name":"img_sign_down.png",
+      "file_url":"/assets/hub/img/common/img_sign_down.png"
+    },
+    {
+      "file_name":"SUIT-Regular.woff",
+      "file_url":"https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2"
+    },
+    {
+      "file_name":"favicon.ico",
+      "file_url":"http://13.125.176.152:8200/favicon.ico"
+    },
+    {
+      "file_name":"swiper-bundle.min.js",
+      "file_url":"https://unpkg.com/swiper/swiper-bundle.min.js"
+    },
+    {
+      "file_name":"load.css",
+      "file_url":"/assets/js/_jquery-3.6.0.min.js"
+    },
+    {
+      "file_name":"swiper.css",
+      "file_url":"/assets/hubapp/css/swiper.css"
+    },
+    {
+      "file_name":"reset.css",
+      "file_url":"/assets/hubapp/css/reset.css"
+    },
+    {
+      "file_name":"contents.css",
+      "file_url":"/assets/hubapp/css/contents.css"
+    },
+    {
+      "file_name":"swiper.js",
+      "file_url":"/assets/hubapp/library/swiper.js"
+    },
+    {
+      "file_name":"test.js",
+      "file_url":"/assets/hubapp/js/test.js"
+    },
+    {
+      "file_name":"bodyScrollLock.min.js",
+      "file_url":"https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    },
+    {
+      "file_name":"NotoSansKR-Regular.woff2",
+      "file_url":"/assets/hubapp/fonts/NotoSansKR-Regular.woff2"
+    },
+    {
+      "file_name":"NotoSansKR-Medium.woff2",
+      "file_url":"/assets/hubapp/fonts/NotoSansKR-Medium.woff2"
+    },
+    {
+      "file_name":"NotoSansKR-Bold.woff2",
+      "file_url":"/assets/hubapp/fonts/NotoSansKR-Bold.woff2"
+    },
+    {
+      "file_name":"project-status.js",
+      "file_url":"/assets/hubapp/js/project-status.js"
+    }
+  ]
+}
