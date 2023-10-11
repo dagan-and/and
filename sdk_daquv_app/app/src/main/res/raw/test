@@ -1,0 +1,21 @@
+2023-07-07 14:35:48.264  2788-2788  DAQUV_INFO              com.daquv.sdksample1                 I  actionClass Name :: DefaultAction
+2023-07-07 14:35:48.300  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  url :: data:text/html;charset=utf-8;base64,
+2023-07-07 14:35:48.394  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  swiper-bundle.min.css
+2023-07-07 14:35:48.397  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/js/jquery-3.6.0.min.js
+2023-07-07 14:35:48.398  2788-3395  DAQUV_INFO              com.daquv.sdksample1                 I  import.css
+2023-07-07 14:35:48.399  2788-3365  DAQUV_INFO              com.daquv.sdksample1                 I  url :: https://unpkg.com/swiper/swiper-bundle.min.js
+2023-07-07 14:35:48.400  2788-3365  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/js/common.js
+2023-07-07 14:35:48.401  2788-3395  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/js/crmComm.js
+2023-07-07 14:35:48.410  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/css/reset.min.css
+2023-07-07 14:35:48.412  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/css/common.min.css
+2023-07-07 14:35:48.413  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/css/app.min.css
+2023-07-07 14:35:48.475  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://fonts.googleapis.com/earlyaccess/notosanskr.css
+2023-07-07 14:35:48.555  2788-2788  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/webview/ibkCrm/v1/brf/crmBrf
+2023-07-07 14:35:48.621  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/img/common/img_mic.png
+2023-07-07 14:35:48.640  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/img/common/btn_home.png
+2023-07-07 14:35:48.661  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/img/common/btn_tooltip.png
+2023-07-07 14:35:49.069  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/img/common/img_sign_up.png
+2023-07-07 14:35:49.075  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/assets/hub/img/common/img_sign_down.png
+2023-07-07 14:35:49.081  2788-3364  DAQUV_INFO              com.daquv.sdksample1                 I  url :: https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2
+2023-07-07 14:35:49.230  2788-2788  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/webview/ibkCrm/v1/brf/crmBrf
+2023-07-07 14:35:49.239  2788-3381  DAQUV_INFO              com.daquv.sdksample1                 I  url :: http://13.125.176.152:8200/favicon.ico

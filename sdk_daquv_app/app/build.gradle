@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.ibk.moasis"
+        minSdk 21
+        targetSdk 33
+        versionCode 1
+        versionName "1.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+    //implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+    //implementation project(path: ':itl_sdk_aar')
+    implementation project(path: ':sdk')
+
+    
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation "androidx.constraintlayout:constraintlayout:2.2.0-alpha07"
+    implementation 'com.google.android.material:material:1.4.0'
+
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+}
