@@ -19,6 +19,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
