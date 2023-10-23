@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //Domain URL 세팅 (필수X 없으면 기본값으로 세팅됩니다.)
         DaquvConfig.crmUrl = "http://203.235.68.65:5102" + "/ava"; //내부망 주소
 
+
         //DAQUV VIEW 설정
         DaquvView daquvView = findViewById(R.id.daquv_view);
         daquvView.setFragmentManager(getSupportFragmentManager());
