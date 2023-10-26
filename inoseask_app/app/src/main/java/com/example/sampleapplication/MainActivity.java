@@ -23,14 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         //String urlScheme ="https://ibk.kr/mpd?p=ava";
-        String urlScheme ="ibkmoasis://";
-
+        //String urlScheme ="ibkmportal://ibk?p=ava";
+        String urlScheme ="kakao816961d76321eb6c24be53904a5d4ca9://kakaolink";
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
-        intent.addCategory(Intent.CATEGORY_BROWSABLE);
-        intent.addCategory(Intent.CATEGORY_DEFAULT);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.setData(Uri.parse(urlScheme));
         startActivity(intent);
 
@@ -47,4 +43,8 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
     }
+//
+//
+//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 }
