@@ -1,4 +1,4 @@
-package com.example.sampleapplication
+package com.daquv.ioneask
 
 import android.app.Activity
 import android.content.Intent
@@ -16,17 +16,14 @@ class MainActivity : Activity() {
     }
 
     private fun init() {
-        //String urlScheme ="https://ibk.kr/mpd?p=ava";
-        //String urlScheme ="ibkmportal://ibk?p=ava";
-        val urlScheme = "kakao816961d76321eb6c24be53904a5d4ca9://kakaolink"
+        val urlScheme ="ibkmportal://ibk?p=ava";
+
         val intent = Intent()
         intent.action = Intent.ACTION_VIEW
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.data = Uri.parse(urlScheme)
         startActivity(intent)
         finishAffinity()
     }
-//
-//
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 }
