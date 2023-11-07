@@ -56,9 +56,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         //로그인 정보 설정
-        //setLoginInfo("CRM","사번","ibkCrm")
-        //daquvView.setLoginInfo("CRM","25125","ibkCrm");
-        daquvView.setLoginInfo("44606");
+        //setLoginInfo("사번")
+        daquvView.setLoginInfo("025125");
 
         //DAQUV VIEW 실행
         daquvView.launch();
