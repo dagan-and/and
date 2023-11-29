@@ -8,7 +8,6 @@
     android:background="#ffffff"
     tools:context=".MainActivity">
 
-
     <com.daquv.sdk.presentation.DaquvView
         android:id="@+id/daquv_view"
         android:layout_width="match_parent"

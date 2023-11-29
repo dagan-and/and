@@ -16,6 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "sdk_daquv_app"
 include ':app'
 include ':sdk'
-include ':g_sdk_aar'
 project(':sdk').projectDir = new File(settingsDir ,'../sdk_andorid_v1/sdk')
-project(':g_sdk_aar').projectDir = new File(settingsDir ,'../sdk_andorid_v1/g_sdk_aar')

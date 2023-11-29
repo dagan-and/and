@@ -3,6 +3,8 @@ package com.example.sampleapplication;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         //Domain URL 세팅 (필수X 없으면 기본값으로 세팅됩니다.)
         DaquvConfig.crmUrl = "http://203.235.68.65:5102" + "/ava"; //내부망 주소
-
+        //DaquvConfig.crmWASUrl = "다큐브 음성,NLU 서버";
 
         //DAQUV VIEW 설정
         DaquvView daquvView = findViewById(R.id.daquv_view);
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onDetached() {
-                finish();
+                finishAffinity();
             }
         });
         //로그인 정보 설정

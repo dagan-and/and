@@ -10,7 +10,6 @@
         <option name="gradleJvm" value="jbr-17" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../sdk_andorid_v1/g_sdk_aar" />
             <option value="$PROJECT_DIR$/../sdk_andorid_v1/sdk" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
