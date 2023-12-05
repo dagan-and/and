@@ -19,7 +19,8 @@ class MainActivity : Activity() {
     }
 
     private fun init() {
-        val urlScheme ="ibkmportal://ibk?p=ava";
+        val urlScheme ="ibkmportal://ibk?p=ava"
+        val downloadPage = "http://ibk.kr/mp"
 
         try {
             val intent = Intent()
@@ -29,7 +30,13 @@ class MainActivity : Activity() {
             intent.data = Uri.parse(urlScheme)
             startActivity(intent)
         } catch (e : RuntimeException) {
-            //앱포탈 다운로드 페이지 URL 로 이동
+            //엠포탈 다운로드 페이지 URL 로 이동
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            intent.data = Uri.parse(downloadPage)
+            startActivity(intent)
         }
         finishAffinity()
     }

@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
         //Domain URL 세팅 (필수X 없으면 기본값으로 세팅됩니다.)
+//        DaquvConfig.crmUrl = "https://nsemp.ibk.co.kr" + "/ava"; //운영망 주소
         DaquvConfig.crmUrl = "http://203.235.68.65:5102" + "/ava"; //내부망 주소
+
         //DaquvConfig.crmWASUrl = "다큐브 음성,NLU 서버";
 
         //DAQUV VIEW 설정
