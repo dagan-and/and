@@ -2,7 +2,7 @@
 
     <style name="Theme.Daquv" parent="Theme.MaterialComponents.Light">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/splash_status_color</item>
+        <item name="colorPrimary">@color/dqv_highlight</item>
     </style>
 
     <style name="Theme.Daquv.NoActionBar" parent="Theme.Daquv">

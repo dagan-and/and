@@ -29,7 +29,13 @@
             </intent-filter>
         </activity>
 
-
+        <activity
+            android:name=".ASKActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout">
+        </activity>
     </application>
 
 </manifest>
