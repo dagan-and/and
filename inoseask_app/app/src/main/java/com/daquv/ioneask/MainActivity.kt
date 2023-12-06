@@ -34,7 +34,7 @@ class MainActivity : Activity() {
         } catch (e : RuntimeException) {
             //엠포탈 다운로드 페이지 URL 로 이동
             val builder = AlertDialog.Builder(this)
-            builder.setMessage("앱이 설치되어있지 않습니다.\nM포탈 다운로드 사이트로 이동됩니다.")
+            builder.setMessage("M포탈 앱이 설치되어있지 않습니다.\nM포탈 다운로드 사이트로 이동됩니다.")
             builder.setPositiveButton("확인", null)
             builder.setOnDismissListener {
                 val intent = Intent()

@@ -37,8 +37,8 @@ public class ASKActivity extends AppCompatActivity {
 
     private void init() {
         //Domain URL 세팅 (필수X 없으면 기본값으로 세팅됩니다.)
-//        DaquvConfig.crmUrl = "https://nsemp.ibk.co.kr" + "/ava"; //운영망 주소
-        DaquvConfig.crmUrl = "http://203.235.68.65:5102" + "/ava"; //내부망 주소
+        DaquvConfig.crmUrl = "https://nsemp.ibk.co.kr" + "/ava"; //운영망 주소
+//        DaquvConfig.crmUrl = "http://203.235.68.65:5102" + "/ava"; //내부망 주소
 
         //DaquvConfig.crmWASUrl = "다큐브 음성,NLU 서버";
 
@@ -58,7 +58,7 @@ public class ASKActivity extends AppCompatActivity {
         });
         //로그인 정보 설정
         //setLoginInfo("사번")
-        daquvView.setLoginInfo("040399");
+        daquvView.setLoginInfo("025125");
 
         //DAQUV VIEW 실행
         daquvView.launch();
