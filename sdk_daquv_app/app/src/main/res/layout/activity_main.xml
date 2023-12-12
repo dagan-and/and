@@ -28,7 +28,7 @@
        android:background="@drawable/rounded_rect_with_stroke"
        android:textColor="@color/dqv_iris"
        android:textSize="30dp"
-       android:text="i-ONE ask"/>
+       android:text="AI영업비서"/>
 
 
 </FrameLayout>
