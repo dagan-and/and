@@ -60,7 +60,7 @@ public class ASKActivity extends AppCompatActivity {
         daquvView.setLoginInfo("025125");
         //인증토큰 정보 설정
         //setToken("인증토큰")
-        daquvView.setAuthToken("abc123123123123");
+        daquvView.setAuthToken("d6b7fd6599ea26eb6d922978075b8635");
         //DAQUV VIEW 실행
         daquvView.launch();
     }
