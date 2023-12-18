@@ -57,10 +57,10 @@ public class ASKActivity extends AppCompatActivity {
         });
         //로그인 정보 설정
         //setLoginInfo("사번")
-        daquvView.setLoginInfo("025125");
+        daquvView.setLoginInfo("044606");
         //인증토큰 정보 설정
         //setToken("인증토큰")
-        daquvView.setAuthToken("d6b7fd6599ea26eb6d922978075b8635");
+        daquvView.setAuthToken("d6b7fd6599ea26eb6d922978075b8635d6b7");
         //DAQUV VIEW 실행
         daquvView.launch();
     }
